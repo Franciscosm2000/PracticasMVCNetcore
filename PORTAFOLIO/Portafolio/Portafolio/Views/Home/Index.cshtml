@@ -1,0 +1,22 @@
+﻿@model HomeIndexViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<h2>Ejemplo 1</h2>
+<div>
+    Guid transitorio : <b style="color : red">@Model.EjemploGUID1.Transtitorio</b>
+</div>
+<div>
+    Guid delimitado : <b style="color : green">@Model.EjemploGUID1.Delimitado</b>
+</div>
+<div>
+    Guid transitorio : <b style="color : blue">@Model.EjemploGUID1.Unico</b>
+</div>*@
+
+<partial name="_Presentacion"></partial>
+
+<partial name="_Habilidades"></partial>
+
+<partial name="_SeccionProyectos" model="Model.Proyectos"></partial>
