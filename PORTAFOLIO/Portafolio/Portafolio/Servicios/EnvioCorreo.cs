@@ -11,12 +11,12 @@ namespace Portafolio.Servicios
             MailMessage email = null;
             try
             {
-                string host = "smtp-relay.sendinblue.com";
-                string from = "franciscosm62000@gmail.com"; 
+                string host = "";
+                string from = ""; 
                 int puerto = 587;
                 bool ssl = true;
-                string usuario = "franciscosm62000@gmail.com";
-                string contrasena = "psUtX5A2zLOfJ9mr";
+                string usuario = "";
+                string contrasena = "";
 
                 email = MailMessage(correodestino, from, asunto, htmlmensaje/*, ReportMemory*/);
                 ClienteSmtp(host, puerto, ssl, usuario, contrasena).Send(email);
